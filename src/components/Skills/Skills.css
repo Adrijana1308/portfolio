@@ -18,7 +18,7 @@
     text-align: center;
     background: transparent;
     margin: 2%;
-    height: 450px;
+    height: 350px;
     width: 450px;
     border-radius: 20px;
     border: 1px solid #1E8DE1;
@@ -33,7 +33,7 @@
     border: 1px solid #1E8DE1;
     border-radius: 20px;
     background: transparent;
-    padding: 15px 35px;
+    padding: 10px 16px;
     margin: 10px;
     font-size: 1.2rem;
     transition: box-shadow 0.3s ease;
