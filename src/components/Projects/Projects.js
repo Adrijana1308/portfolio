@@ -29,7 +29,7 @@ function Projects() {
       image: project3,
       title: 'Instagram clone',
       description: 'I created a simple Instagram-like interface using ReactJS, as one of my recent projects.',
-      url: 'https://github.com/Adrijana1308/chatbot'
+      url: 'https://github.com/Adrijana1308/insta-clone'
     },
     {
       image: project4,
