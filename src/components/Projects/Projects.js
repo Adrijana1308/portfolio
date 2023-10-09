@@ -42,16 +42,6 @@ function Projects() {
     },
   ];
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-    setShowModal(false);
-  };
-
   return (
     <div id="projects">
       <div className="Projects">
@@ -71,23 +61,6 @@ function Projects() {
           ))}
         </div>
       </div>
-
-      {showModal && selectedProject && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <span className="modal-close" onClick={closeModal}>
-              &times;
-            </span>
-            <img
-              className="modal-project-img"
-              src={selectedProject.image}
-              alt={selectedProject.title}
-            />
-            <h2>{selectedProject.title}</h2>
-            <p>{selectedProject.description}</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
