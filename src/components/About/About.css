@@ -11,8 +11,8 @@
 }
 
 .foto{
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 350px;
+    max-height: 350px;
     border-radius: 50%;
     grid-area: 1/2;
     margin-left: 20%;
