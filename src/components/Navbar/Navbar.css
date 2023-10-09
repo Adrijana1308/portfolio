@@ -71,6 +71,10 @@
     font-size: 1.2rem;
     padding: 15px;
 }
+
+.link:hover{
+    color: #1E8DE1;
+}
   
 .open .link {
     padding: 10px;
