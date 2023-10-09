@@ -65,7 +65,7 @@ function Experience() {
                       <h4>Web Designer - Sviben Marine d.o.o.</h4>
                       <h5>December 2017 - February 2018</h5>
                       <p>I designed, implemented, and maintained a user-friendly website with a focus on responsive design and seamless user experience.</p>
-                      <p>Skills:</p>
+                      <p>Skills used:</p>
                       <ul className='exp-list'>
                           <li className='exp-skill'>HTML</li>
                           <li className='exp-skill'>CSS</li>
