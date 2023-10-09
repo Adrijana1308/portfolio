@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="about">
     <div className="About">
-        <img className='foto' src={foto} alt="My picture"/>
+        <img className='foto' src={foto} alt="profile"/>
         <div>
           <h1>Hi, I am Adrijana Babić</h1>
           <h2>I am a Frontend Developer</h2>

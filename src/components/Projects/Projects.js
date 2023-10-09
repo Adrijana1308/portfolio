@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Projects.css';
 import project1 from './images/project1.png';
 import project2 from './images/project2.png';
@@ -9,8 +9,6 @@ import project5 from './images/project5.png';
 
 
 function Projects() {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsData = [
     {
