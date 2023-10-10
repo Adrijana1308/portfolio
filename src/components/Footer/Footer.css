@@ -31,7 +31,7 @@
     }
 
     .footer-links{
-    font-size: 15px;
+        font-size: 15px;
     }
     
 }
@@ -47,7 +47,7 @@
     }
 
     .footer-links{
-    font-size: 13px;
+        font-size: 13px;
     }
     
 }
@@ -63,7 +63,24 @@
     }
 
     .footer-links{
-    font-size: 9px;
+        font-size: 9px;
+    }
+    
+}
+
+@media screen and (max-width: 376px) {
+
+    .Footer {
+        flex-direction: column;
+        margin: auto;
+        font-size: 0.5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-links{
+        font-size: 9px;
+        padding: 2px;
     }
     
 }
