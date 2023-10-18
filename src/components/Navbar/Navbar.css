@@ -50,7 +50,7 @@
 }
   
 .open .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
 }
   
 .open .bar:nth-child(2) {
@@ -58,7 +58,7 @@
 }
   
 .open .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }
   
 .nav-links {
@@ -110,6 +110,10 @@
     justify-content: flex-end;
     background-color: transparent;
     border: 2px solid rgb(242, 243, 244);
+}
+
+.switch.dark-mode:hover{
+    border: 2px solid #1E8DE1;
 }
   
 .handle {
