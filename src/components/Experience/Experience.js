@@ -1,3 +1,4 @@
+import { useAppContext } from '../../AppContext';
 import './Experience.css';
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
@@ -9,6 +10,7 @@ import TimelineDot from '@mui/lab/TimelineDot'
 
 
 function Experience() {
+  const { isOn } = useAppContext();
   const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
 
   const handleWindowSizeChange = () => {
@@ -25,7 +27,7 @@ function Experience() {
   const renderTimeline = screenWidth > 1217;
 
   return (
-    <div id="experience">
+    <div id="experience" className={`${isOn ? 'dark-mode' : ''}`}>
       <div className="Experience">
         <h2>Experience</h2>
         <p>During my time in college, I gained valuable experience by working on various projects.</p>
