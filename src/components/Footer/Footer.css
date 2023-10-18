@@ -23,6 +23,10 @@
     padding: 15px;
 }
 
+.footer-links.dark-mode:hover{
+    color: #1E8DE1;
+  }
+
 /* Media */
 @media screen and (max-width: 1024px) {
 
