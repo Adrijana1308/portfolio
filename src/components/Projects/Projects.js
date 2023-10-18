@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAppContext } from '../../AppContext';
 import './Projects.css';
 import project1 from './images/project1.png';
 import project2 from './images/project2.png';
@@ -9,6 +10,7 @@ import project5 from './images/project5.png';
 
 
 function Projects() {
+  const { isOn } = useAppContext();
 
   const projectsData = [
     {
@@ -46,10 +48,10 @@ function Projects() {
   ];
 
   return (
-    <div id="projects">
+    <div id="projects" className={`${isOn ? 'dark-mode' : ''}`}>
       <div className="Projects">
         <h2>Projects</h2>
-        <p>Here are some of my projects on which I have been working on during my last year of college.</p>
+        <p>Here are some of my projects on which I have been working on.</p>
         <div className="pro-sections">
           {projectsData.map((project, index) => (
             <div className="pro-section" key={index}>
