@@ -38,6 +38,7 @@
 .github-link:hover{
     background: transparent;
     border: 2px solid #1E8DE1;
+    color:#fff;
 }
 
 .github-link.dark-mode{
