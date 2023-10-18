@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-scroll';
+import { useAppContext } from '../../AppContext';
 import './Footer.css';
 
 
 
 function Footer() {
+  const { isOn } = useAppContext();
+
   return (
-    <div className='Footer'>
+    <div className={`Footer ${isOn ? 'dark-mode' : ''}`}>
         <h2>adrijanababic4@gmail.com</h2>
         <div className='footer-links'>
             <Link to="about" spy={true} smooth={true} duration={500} className='footer-links'>About</Link>
