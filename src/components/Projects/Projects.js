@@ -63,7 +63,7 @@ function Projects() {
               <p className="project-title">{project.title}</p>
               <p className="project-disc">{project.description}</p>
               <a href={project.url} target="_blank" rel="noreferrer">
-                <button className='code-button'>View code</button>
+                <button className={`code-button ${isOn ? 'dark-mode' : ''}`}>View code</button>
               </a>
             </div>
           ))}
