@@ -1,3 +1,4 @@
+import { useAppContext } from '../../AppContext';
 import './Education.css';
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
@@ -8,6 +9,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot'
 
 function Education() {
+  const { isOn } = useAppContext();
   const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
 
   const handleWindowSizeChange = () => {
@@ -24,7 +26,7 @@ function Education() {
   const renderTimeline = screenWidth > 1217; 
 
   return (
-    <div id="education">
+    <div id="education" className={`${isOn ? 'dark-mode' : ''}`}>
       <div className="Education">
         <h2>Education</h2>
         <p>My education has been a journey of self-discovery and growth. My educational details are as follows.</p>
