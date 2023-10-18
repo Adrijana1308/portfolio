@@ -68,6 +68,17 @@
     transition: box-shadow 0.3s ease;
 }
 
+.code-butto:hover{
+    background: transparent;
+    border: 2px solid #1E8DE1;
+    color:#1E8DE1;
+}
+
+.code-button.dark-mode{
+    background-color: transparent;
+    border: 2px solid #1E8DE1;
+}
+
 /* Media */
 @media screen and (max-width: 1024px) {
 

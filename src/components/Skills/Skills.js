@@ -31,7 +31,7 @@ function Skills() {
             <div className='section'>
               <p>Other</p>
               <button className={`skill ${isOn ? 'dark-mode' : ''}`}><img className='icon' src="https://www.svgrepo.com/show/452210/git.svg" alt="Git icon" />Git</button>
-              <button className={`skill ${isOn ? 'dark-mode' : ''}`}><img className='icon' src="https://www.svgrepo.com/show/512317/github-142.svg" alt="Github icon" />Github</button>
+              <button className={`skill ${isOn ? 'dark-mode' : ''}`}><img className='icon' src="https://www.svgrepo.com/show/439171/github.svg" alt="Github icon" />Github</button>
               <button className={`skill ${isOn ? 'dark-mode' : ''}`}><img className='icon' src="https://www.svgrepo.com/show/373874/netlify.svg" alt="Netlify icon" />Netlify</button>
               <button className={`skill ${isOn ? 'dark-mode' : ''}`}><img className='icon' src="https://www.svgrepo.com/show/452129/vs-code.svg" alt="VS Code icon" />VS Code</button>
               <button className={`skill ${isOn ? 'dark-mode' : ''}`}><img className='icon' src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman icon" />Postman</button>
