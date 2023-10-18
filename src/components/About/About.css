@@ -1,3 +1,8 @@
+.dark-mode{
+    background: #020016;
+    color: rgb(242, 243, 244);
+}
+
 .About{
     height: 100vh;
     display: grid;
@@ -14,6 +19,7 @@
     max-width: 350px;
     max-height: 350px;
     border-radius: 50%;
+    border: 2px solid #1E8DE1;
     grid-area: 1/2;
     margin-left: 20%;
 }
@@ -26,11 +32,17 @@
     padding: 15px 21px;
     font-size: 18px;
     border-radius: 20px;
-    transition: box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .github-link:hover{
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background: transparent;
+    border: 2px solid #1E8DE1;
+}
+
+.github-link.dark-mode{
+    background-color: transparent;
+    border: 2px solid #1E8DE1;
 }
 
 /* Media */
