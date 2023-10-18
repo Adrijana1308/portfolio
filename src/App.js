@@ -1,3 +1,4 @@
+import { AppContextProvider } from './AppContext';
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
 import About from './components/About/About'
@@ -11,13 +12,15 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
-      <Footer />
+      <AppContextProvider>
+        <Navbar />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Footer />
+      </AppContextProvider>
     </div>
   );
 }

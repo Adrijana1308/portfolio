@@ -11,6 +11,12 @@
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
+
+.Navbar.dark-mode{
+    background: #01000e;
+    color: rgb(242, 243, 244);
+    box-shadow: 0px 2.98256px 7.4564px rgba(255, 255, 255, 0.11);
+}
   
 .navbar-content {
     display: flex;
@@ -18,10 +24,6 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 20px;
-}
-  
-.logo {
-    height: 35px;
 }
   
 .title {
@@ -41,6 +43,10 @@
     background: #000;
     margin: 3px 0;
     transition: all 0.3s ease-in-out;
+}
+
+.bar.dark-mode{
+    background:  rgb(242, 243, 244);
 }
   
 .open .bar:nth-child(1) {
@@ -75,9 +81,46 @@
 .link:hover{
     color: #1E8DE1;
 }
+
+.link.dark-mode{
+    color: rgb(242, 243, 244);
+    background: #01000e77;
+}
+
+.link.dark-mode:hover{
+  color: #1E8DE1;
+}
   
 .open .link {
     padding: 10px;
+}
+
+.switch {
+    width: 50px;
+    height: 25px;
+    background-color: #1E8DE1;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+  
+.switch[data-isOn="true"] {
+    justify-content: flex-end;
+    background-color: transparent;
+    border: 2px solid rgb(242, 243, 244);
+}
+  
+.handle {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.handle.dark-mode{
+    background-color: rgb(242, 243, 244);
 }
 
 @media screen and (max-width: 1024px) {
@@ -106,10 +149,12 @@
       background: #fff;
       text-align: center;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-     /* max-height: 0;
-      overflow: hidden;*/
       height: auto;
       transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.dark-mode{
+        background: #01000e;
     }
   
     .open .nav-links {
