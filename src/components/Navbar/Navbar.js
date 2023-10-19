@@ -40,7 +40,6 @@ function Navbar() {
     const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
     setIsOn(darkModeQuery.matches);
 
-    // Dodajemo event listener za promjene u preferiranom načinu prikaza
     const handleDarkModeChange = (event) => {
       setIsOn(event.matches);
     };
@@ -48,7 +47,6 @@ function Navbar() {
     darkModeQuery.addEventListener('change', handleDarkModeChange);
 
     return () => {
-      // Uklanjamo event listener kad komponenta bude demontirana
       darkModeQuery.removeEventListener('change', handleDarkModeChange);
     };
   }, [setIsOn]);
@@ -62,9 +60,13 @@ function Navbar() {
   return (
     <div className={`Navbar ${isOpen ? 'open' : ''} ${isOn ? 'dark-mode' : ''}`}>
       <div className="navbar-content">
-        <div className={`switch ${isOn ? 'dark-mode' : ''}`} data-isOn={isOn} onClick={toggleSwitch}>
-          <motion.div className={`handle ${isOn ? 'dark-mode' : ''}`} layout transition={spring} />
-        </div>
+        <div className='lightOrDark'>
+              <p>Light</p>
+              <div className={`switch ${isOn ? 'dark-mode' : ''}`} data-isOn={isOn} onClick={toggleSwitch}>
+                <motion.div className={`handle ${isOn ? 'dark-mode' : ''}`} layout transition={spring} />
+              </div>
+              <p>Dark</p>
+          </div>
         <p className='title'>Portfolio</p>
         {isMobile && (
           <div className={`hamburger ${isOpen ? 'open' : ''} ${isOn ? 'dark-mode' : ''}`} onClick={toggleNav}>
