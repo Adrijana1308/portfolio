@@ -99,6 +99,7 @@
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
         font-size: 1rem;
+        align-items: start;
     }
   
     .foto {
