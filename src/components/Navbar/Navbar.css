@@ -1,3 +1,9 @@
+.dark-mode{
+    background: #020016;
+    color: rgb(242, 243, 244);
+    transition: all 0.3s ease-in-out;
+}  
+
 .Navbar {
     height: 80px;
     width: 100%;
@@ -68,6 +74,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    background-color: transparent;
 }
   
 .link {
@@ -76,6 +83,7 @@
     font-weight: bold;
     font-size: 1.2rem;
     padding: 15px;
+    background-color: transparent;
 }
 
 .link:hover{
@@ -84,7 +92,6 @@
 
 .link.dark-mode{
     color: rgb(242, 243, 244);
-    background: #01000e77;
 }
 
 .link.dark-mode:hover{

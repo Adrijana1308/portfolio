@@ -8,6 +8,7 @@
     font-size: 1.2rem;
     text-align: center;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .timeline-item:nth-child(odd) .edu-sections {
