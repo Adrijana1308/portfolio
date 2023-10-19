@@ -11,11 +11,6 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const { isOn, setIsOn } = useAppContext();
 
-  const toggleTheme = () => {
-    setIsOn(!isOn);
-    // Ovdje možete također ažurirati lokalno pohranjeni preference korisnika
-  };
-
   const toggleNav = () => {
     if (isMobile) {
       setIsOpen(!isOpen);
