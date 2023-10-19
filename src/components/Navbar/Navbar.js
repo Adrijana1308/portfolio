@@ -9,6 +9,12 @@ import { motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const { isOn, setIsOn } = useAppContext();
+
+  const toggleTheme = () => {
+    setIsOn(!isOn);
+    // Ovdje možete također ažurirati lokalno pohranjeni preference korisnika
+  };
 
   const toggleNav = () => {
     if (isMobile) {
@@ -33,8 +39,24 @@ function Navbar() {
     };
   }, []);
 
-  const { isOn, setIsOn } = useAppContext();
   const toggleSwitch = () => setIsOn(!isOn);
+
+  useEffect(() => {
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsOn(darkModeQuery.matches);
+
+    // Dodajemo event listener za promjene u preferiranom načinu prikaza
+    const handleDarkModeChange = (event) => {
+      setIsOn(event.matches);
+    };
+
+    darkModeQuery.addEventListener('change', handleDarkModeChange);
+
+    return () => {
+      // Uklanjamo event listener kad komponenta bude demontirana
+      darkModeQuery.removeEventListener('change', handleDarkModeChange);
+    };
+  }, [setIsOn]);
 
   const spring = {
     type: "spring",
