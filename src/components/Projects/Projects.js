@@ -16,7 +16,7 @@ function Projects() {
       image: project6,
       title: "Calendar",
       description:
-        "A calendar that allows choosing the day, month, and year, displaying GitHub commit details via the API for the Calendar project.",
+        "A calendar with the capability to select days, months, and years, showcasing GitHub commit details through the API for the Calendar project.",
       url: "https://github.com/Adrijana1308/calendar",
     },
     {
