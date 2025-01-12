@@ -104,7 +104,7 @@ function Education() {
           <div className="edu-section">
             <div className="edu">
               <h4>FACULTY OF INFORMATICS, PULA</h4>
-              <h5>I will be completing my studies in 2024. </h5>
+              <h5>2019 - 2024 </h5>
               <p>
                 During my time as a student, I acquired valuable skills in
                 delivering projects within specified deadlines, collaborating

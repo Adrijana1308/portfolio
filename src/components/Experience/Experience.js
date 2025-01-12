@@ -44,7 +44,7 @@ function Experience() {
                 <div className="exp-section">
                   <div className="exp">
                     <h4>Programmer - INIT Grupa d.o.o.</h4>
-                    <h5>December 2023 - Present</h5>
+                    <h5>December 2023 - March 2024</h5>
                     <p>
                       While working on the Cisco project, I fulfill tasks and
                       set goals within specified time frames.
@@ -111,13 +111,14 @@ function Experience() {
             </TimelineItem>
           </Timeline>
         )}
+        /*
         {!renderTimeline && (
           <div className="exp-section">
             <div className="exp">
               <h4>Programmer - INIT Grupa d.o.o.</h4>
-              <h5>December 2023 - Present</h5>
+              <h5>December 2023 - March 2024</h5>
               <p>
-                While working on the Cisco project, I fulfill tasks and set
+                While working on the Cisco project, I fulfilled tasks and set
                 goals within specified time frames.
               </p>
             </div>
@@ -139,6 +140,7 @@ function Experience() {
             </div>
           </div>
         )}
+        */
       </div>
     </div>
   );

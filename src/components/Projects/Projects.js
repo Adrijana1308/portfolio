@@ -17,7 +17,7 @@ function Projects() {
       title: "Calendar",
       description:
         "A calendar with the capability to select days, months, and years, showcasing GitHub commit details through the API for the Calendar project.",
-      url: "https://github.com/Adrijana1308/calendar",
+      url: "https://b2calendar.netlify.app",
     },
     {
       image: project1,
@@ -72,7 +72,7 @@ function Projects() {
               <p className="project-disc">{project.description}</p>
               <a href={project.url} target="_blank" rel="noreferrer">
                 <button className={`code-button ${isOn ? "dark-mode" : ""}`}>
-                  View code
+                  View project
                 </button>
               </a>
             </div>
