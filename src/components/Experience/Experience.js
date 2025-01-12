@@ -111,7 +111,7 @@ function Experience() {
             </TimelineItem>
           </Timeline>
         )}
-        /*
+
         {!renderTimeline && (
           <div className="exp-section">
             <div className="exp">
@@ -140,7 +140,6 @@ function Experience() {
             </div>
           </div>
         )}
-        */
       </div>
     </div>
   );
