@@ -15,7 +15,7 @@ function About() {
             Bachelor of Information Technology with strong motivation and a
             desire to learn new technologies and enhance knowledge of existing
             ones. I have an eye for detail, excellent problem-solving skills,
-            and the ability to work effectively in a team environment.**.
+            and the ability to work effectively in a team environment.
           </p>
           <a
             target="_blank"

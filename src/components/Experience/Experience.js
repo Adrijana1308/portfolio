@@ -30,8 +30,8 @@ function Experience() {
       <div className="Experience">
         <h2>Experience</h2>
         <p>
-          During my time in college, I gained valuable experience by working on
-          various projects.
+          With 9 years of experience in web development, I gained valuable
+          experience by working on various projects.
         </p>
         {renderTimeline && (
           <Timeline position="alternate-reverse">

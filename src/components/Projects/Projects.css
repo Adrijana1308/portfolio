@@ -1,171 +1,169 @@
-.Projects{
-    margin-top: 5%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-    transition: all 0.3s ease-in-out;
+.Projects {
+  margin-top: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.pro-sections{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+.pro-sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.pro-section{
-    align-items: center;
-    padding: 20px;
-    font-size: 1.2rem;
-    text-align: center;
-    background: transparent;
-    margin: 2%;
-    height: auto;
-    width: 550px;
-    border-radius: 20px;
-    border: 2px solid #1E8DE1;
-    justify-content: center;
-    box-shadow: 0px 0px 20px #1e8ce180;
+.pro-section {
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  background: transparent;
+  margin: 2%;
+  height: auto;
+  width: 550px;
+  border-radius: 20px;
+  border: 2px solid #1e8de1;
+  justify-content: center;
+  box-shadow: 0px 0px 20px #1e8ce180;
 }
 
-.pro-section:hover{
-    box-shadow: 0px 0px 20px #1e8ce180;
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+.pro-section:hover {
+  box-shadow: 0px 0px 20px #1e8ce180;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
-.project-img{
-    width: 90%;
-    height: 230px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
+.project-img {
+  width: 90%;
+  height: 230px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 
-.project-title{
-    font-weight: bold;
-    text-align: left;
-    padding-left: 6%;
+.project-title {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 6%;
 }
 
-.project-disc{
-    max-width: 100%;
-    text-align: left;
-    padding-left: 6%;
-    font-size: smaller;
-}  
-
-.code-button{
-    cursor: pointer;
-    background-color: #1E8DE1;
-    color:aliceblue;
-    border: 2px solid #1E8DE1;
-    padding: 15px 21px;
-    font-size: 18px;
-    border-radius: 20px;
-    transition: box-shadow 0.3s ease;
+.project-disc {
+  max-width: 100%;
+  text-align: left;
+  padding-left: 6%;
+  font-size: smaller;
+  margin-top: auto;
 }
 
-.code-button:hover{
-    background: transparent;
-    border: 2px solid #1E8DE1;
-    box-shadow: 0px 0px 20px #1e8ce180;
-    color:#1E8DE1;
+.code-button {
+  cursor: pointer;
+  background-color: #1e8de1;
+  color: aliceblue;
+  border: 2px solid #1e8de1;
+  padding: 15px 21px;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
 }
 
-.code-button.dark-mode{
-    background-color: transparent;
-    border: 2px solid #1E8DE1;
+.code-button:hover {
+  background: transparent;
+  border: 2px solid #1e8de1;
+  box-shadow: 0px 0px 20px #1e8ce180;
+  color: #1e8de1;
+}
+
+.code-button.dark-mode {
+  background-color: transparent;
+  border: 2px solid #1e8de1;
 }
 
 /* Media */
 @media screen and (max-width: 1024px) {
+  .Projects {
+    flex-direction: column;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1rem;
+    width: 100%;
+    height: auto;
+  }
 
-    .Projects {
-        flex-direction: column;
-        margin: auto;
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
+  .pro-section {
+    font-size: 1rem;
+    text-align: center;
+    background: transparent;
+    margin: 2%;
+    height: auto;
+    width: 480px;
+    border-radius: 20px;
+    border: 2px solid #1e8de1;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .pro-section{
-        font-size: 1rem;
-        text-align: center;
-        background: transparent;
-        margin: 2%;
-        height: auto;
-        width: 480px;
-        border-radius: 20px;
-        border: 2px solid #1E8DE1;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .project-img{
-        width: 90%;
-        height: auto;
-        border-radius: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 30px;
-    }
+  .project-img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  
-    .Projects {
-        flex-direction: column;
-        margin: auto;
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 0.8rem;
-        width: 100%;
-        height: auto;
-    }
+  .Projects {
+    flex-direction: column;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 0.8rem;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 426px) {
-  
-    .Projects {
-        flex-direction: column;
-        margin: auto;
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 1rem;
-        width: auto;
-        height: auto;
-        text-align: center;
-    }
-    .pro-section{
-        font-size: 1rem;
-        text-align: center;
-        background: transparent;
-        margin: 2%;
-        height: auto;
-        width: auto;
-        border-radius: 20px;
-        border: 2px solid #1E8DE1;
-        justify-content: center;
-        align-items: center;
-    }
-    .project-disc{
-        width: auto;
-        text-align: left;
-        padding-left: 7%;
-        font-size: smaller;
-    }
-    
-    .code-button{
-        cursor: pointer;
-        background-color: #1E8DE1;
-        color:aliceblue;
-        border: none;
-        padding: 10px 16px;
-        font-size: 13px;
-        border-radius: 20px;
-        transition: box-shadow 0.3s ease;
-    }
+  .Projects {
+    flex-direction: column;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .pro-section {
+    font-size: 1rem;
+    text-align: center;
+    background: transparent;
+    margin: 2%;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    border: 2px solid #1e8de1;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-disc {
+    width: auto;
+    text-align: left;
+    padding-left: 7%;
+    font-size: smaller;
+  }
+
+  .code-button {
+    cursor: pointer;
+    background-color: #1e8de1;
+    color: aliceblue;
+    border: none;
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+  }
 }

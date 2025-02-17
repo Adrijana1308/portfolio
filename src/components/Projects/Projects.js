@@ -7,16 +7,24 @@ import project3 from "./images/project3.png";
 import project4 from "./images/project4.png";
 import project5 from "./images/project5.png";
 import project6 from "./images/project6.png";
+import locksify from "./images/locksify.png";
 
 function Projects() {
   const { isOn } = useAppContext();
 
   const projectsData = [
     {
+      image: locksify,
+      title: "Locksify",
+      description:
+        "The app has user/employees registration and login. The user can browse and select a hair salon, book an appointment which is then saved in the database. Employees have access to view all appointments, comments, and ratings after logging in",
+      url: "https://locksify.netlify.app",
+    },
+    {
       image: project6,
       title: "Calendar",
       description:
-        "A calendar with the capability to select days, months, and years, showcasing GitHub commit details through the API for the Calendar project.",
+        "A calendar with the capability to select days, months, and years, showcasing GitHub commit details through the API for the Calendar project. Last entry was November 2023 if you want to see commit details displayed.",
       url: "https://b2calendar.netlify.app",
     },
     {
