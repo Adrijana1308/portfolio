@@ -77,7 +77,10 @@ function Projects() {
         <h2>Projects</h2>
         <p>Here are some of my projects on which I have been working on.</p>
         <div className="pro-sections">
-          <img src="https://www.svgrepo.com/show/452156/angular.svg" />
+          <img
+            src="https://www.svgrepo.com/show/452156/angular.svg"
+            alt="Angular icon"
+          />
           {projectsData.map((project, index) => (
             <div className="pro-section" key={index}>
               <img
