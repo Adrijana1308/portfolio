@@ -8,11 +8,19 @@ import project4 from "./images/project4.png";
 import project5 from "./images/project5.png";
 import project6 from "./images/project6.png";
 import locksify from "./images/locksify.png";
+import zaposlenici from "./images/zaposlenici.png";
 
 function Projects() {
   const { isOn } = useAppContext();
 
   const projectsData = [
+    {
+      image: zaposlenici,
+      title: "Zaposlenici",
+      description:
+        "The application displays a list of company employees with powerful management features. Users can sort, filter, and search employees efficiently. Additionally, the app allows adding, editing, and deleting employees, with all changes being saved directly to the database for seamless data management.",
+      url: "https://zaposlenici.netlify.app",
+    },
     {
       image: locksify,
       title: "Locksify",
