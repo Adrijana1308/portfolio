@@ -85,7 +85,7 @@
   }
 
   .tsSkill {
-    grid-area: 2/1;
+    grid-area: 5/3 / span 2 / span 2;
   }
 }
 
