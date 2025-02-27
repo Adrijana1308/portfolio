@@ -1,119 +1,250 @@
-.About{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.2rem;
-    align-items: center;
-    position: relative;
-    background: transparent;
-    transition: all 0.3s ease-in-out;
+.About {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.2rem;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.gradient-border {
+  --border-width: 2px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-left: 20%;
+  grid-area: 1/2;
+  overflow: visible;
 }
 
-.foto{
-    max-width: 350px;
-    max-height: 350px;
-    border-radius: 50%;
-    border: 2px solid #1E8DE1;
-    grid-area: 1/2;
-    margin-left: 20%;
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  margin-left: 10%;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: 50%;
+  animation: moveGradient 4s alternate infinite;
+  z-index: 0;
 }
 
-.github-link{
-    cursor: pointer;
-    background-color: #1E8DE1;
-    color:aliceblue;
-    border: 2px solid #1E8DE1;
-    padding: 15px 21px;
-    font-size: 18px;
-    border-radius: 20px;
-    transition: 0.3s ease;
+.foto {
+  width: 355px;
+  height: 355px;
+  border-radius: 50%;
+  grid-area: 1/2;
+  margin-left: 20%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
-.github-link:hover{
-    background: transparent;
-    color:#1E8DE1;
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
-.github-link.dark-mode{
-    background-color: transparent;
-    border: 2px solid #1E8DE1;
+.github-link {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 15px 21px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  width: 157px;
+  height: 52px;
+}
+
+.github-link:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.github-link.dark-mode {
+  background-color: #020016;
+}
+
+.gradient-border-buttons {
+  --border-width: 4px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 153px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.gradient-border-buttons::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: 10px;
+  animation: moveGradient 4s alternate infinite;
+  z-index: 0;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Media */
 @media screen and (max-width: 1204px) {
+  .About {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    margin: 5% 15%;
+    font-size: 1rem;
+    align-items: center;
+    position: relative;
+  }
 
-    .About {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-        margin: 5% 15%;
-        font-size: 1rem;
-        align-items: center;
-        position: relative;
-    }
+  .foto {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    grid-area: 1/1;
+  }
 
-    .foto {
-        max-width: 70%; 
-        margin: 0 auto; 
-        margin-bottom: 20px;
-        grid-area: 1/1;
-    }
-
-    .github-link{
-        font-size: 0.9rem;
-        padding: 10px 16px;
-    }
+  .github-link {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+  .gradient-border {
+    max-width: 72%;
+    max-height: 42%;
+  }
+  .gradient-border::before {
+    margin: 0;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .About {
+    flex-direction: column;
+    text-align: center;
+    margin: 5% 2%;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1rem;
+  }
 
-    .About {
-        flex-direction: column;
-        text-align: center;
-        margin: 5% 2%;
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 1rem;
+  .foto {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    grid-area: 1/1;
+  }
 
-    }
-  
-    .foto {
-        max-width: 50%; 
-        margin: 0 auto; 
-        margin-bottom: 20px;
-        grid-area: 1/1;
-    }
-
-    .github-link{
-        font-size: 1rem;
-    }
+  .github-link {
+    font-size: 1rem;
+  }
+  .gradient-border {
+    max-width: 72%;
+    max-height: 42%;
+  }
+  .gradient-border::before {
+    margin: 0;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+  }
 }
 
 @media screen and (max-width: 426px) {
+  .About {
+    flex-direction: column;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1rem;
+    align-items: start;
+  }
 
-    .About {
-        flex-direction: column;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 1rem;
-        align-items: start;
-    }
-  
-    .foto {
-        max-width: 50%; 
-        margin: 0 auto;
-        grid-area: 1/1;
-        align-self: center;
-    }
+  .foto {
+    max-width: 81%;
+    max-height: 81%;
+    margin: 0 auto;
+    grid-area: 1/1;
+    align-self: center;
+  }
 
-    .text h1{
-        margin-top: 0;
-    }
+  .text h1 {
+    margin-top: 0;
+  }
 
-    .github-link{
-        font-size: 1rem;
-    }
+  .github-link {
+    font-size: 1rem;
+  }
+  .gradient-border {
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: 1/1;
+    margin: auto;
+  }
+  .gradient-border::before {
+    margin: 0 auto;
+    width: calc(80% + 8px);
+    height: calc(80% + 8px);
+    top: 31px;
+    left: 31px;
+  }
+  .gradient-border-buttons {
+    margin: auto;
+    margin-top: 10%;
+  }
 }

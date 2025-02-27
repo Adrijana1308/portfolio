@@ -87,7 +87,11 @@ function Projects() {
         <div className="pro-sections">
           {projectsData.map((project, index) => (
             <div className="pro-section" key={index}>
-              <img src={project.iconUrl} alt="Skill Icon" class="skill-icons" />
+              <img
+                src={project.iconUrl}
+                alt="Skill Icon"
+                className="skill-icons"
+              />
               <img
                 className="project-img"
                 src={project.image}
@@ -95,11 +99,13 @@ function Projects() {
               />
               <p className="project-title">{project.title}</p>
               <p className="project-disc">{project.description}</p>
-              <a href={project.url} target="_blank" rel="noreferrer">
-                <button className={`code-button ${isOn ? "dark-mode" : ""}`}>
-                  View project
-                </button>
-              </a>
+              <div className="gradient-border-buttons">
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  <button className={`code-button ${isOn ? "dark-mode" : ""}`}>
+                    View project
+                  </button>
+                </a>
+              </div>
             </div>
           ))}
         </div>

@@ -1,94 +1,89 @@
-.Footer.dark-mode{
-    background: #01000e;
-    color: #ffeded;
+.Footer.dark-mode {
+  background: #01000e;
+  color: #ffeded;
 }
 .Footer {
-    background: #01000e;
-    color:aliceblue;
-    height: 150px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+  background: #01000e;
+  color: aliceblue;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
-.footer-icons{
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    size: 150px;
+.footer-icons {
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  size: 150px;
 }
 
-.icons{
-    width: 40px;
-    padding: 10px 15px;
+.icons {
+  width: 40px;
+  padding: 10px 15px;
 }
-
 
 /* Media */
 @media screen and (max-width: 1024px) {
+  .Footer {
+    flex-direction: column;
+    margin: auto;
+    font-size: 0.8rem;
+    width: 100%;
+    height: auto;
+  }
 
-    .Footer {
-        flex-direction: column;
-        margin: auto;
-        font-size: 0.8rem;
-        width: 100%;
-        height: auto;
-    }  
-
-    .icons{
-        width: 30px;
-        padding: 10px 10px;
-    }
+  .icons {
+    width: 30px;
+    padding: 10px 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .Footer {
+    flex-direction: column;
+    margin: auto;
+    font-size: 0.6rem;
+    width: 100%;
+    height: auto;
+  }
 
-    .Footer {
-        flex-direction: column;
-        margin: auto;
-        font-size: 0.6rem;
-        width: 100%;
-        height: auto;
-    }
-
-    .icons{
-        width: 28px;
-        padding: 5px 5px;
-    }
+  .icons {
+    width: 28px;
+    padding: 5px 5px;
+  }
 }
 
 @media screen and (max-width: 426px) {
+  .Footer {
+    flex-direction: column;
+    margin: auto;
+    font-size: 0.5rem;
+    width: 100%;
+    height: auto;
+  }
 
-    .Footer {
-        flex-direction: column;
-        margin: auto;
-        font-size: 0.5rem;
-        width: 100%;
-        height: auto;
-    }
-
-    .icons{
-        width: 23px;
-        padding: 5px 10px;
-    }
+  .icons {
+    width: 23px;
+    padding: 5px 10px;
+  }
 }
 
 @media screen and (max-width: 376px) {
+  .Footer {
+    flex-direction: column;
+    margin: auto;
+    font-size: 0.5rem;
+    width: 100%;
+    height: auto;
+  }
 
-    .Footer {
-        flex-direction: column;
-        margin: auto;
-        font-size: 0.5rem;
-        width: 100%;
-        height: auto;
-    }
-
-    .icons{
-        width: 20px;
-        padding: 5px 7px;
-    }
+  .icons {
+    width: 20px;
+    padding: 5px 7px;
+  }
 }

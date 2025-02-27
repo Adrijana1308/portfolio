@@ -1,99 +1,131 @@
-.Skills{
-    margin-top: 5%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
+.Skills {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
-.sections{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+.sections {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 10px;
+  margin: 5% 20%;
 }
 
-.section{
-    text-align: center;
-    background: transparent;
-    margin: 2%;
-    height: 350px;
-    width: 450px;
-    border-radius: 20px;
-    border: 2px solid #1E8DE1;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 20px #1e8ce180;
+.sectionOfSkill {
+  display: flex;
+  text-align: center;
+  background: transparent;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 158px;
+  min-width: 158px;
+  box-shadow: 0px 0px 20px #a5a4a4ab;
 }
 
-.skill {
-    display: inline-flex;
-    align-items: center;
-    border: 2px solid #1E8DE1;
-    border-radius: 20px;
-    background: transparent;
-    padding: 10px 16px;
-    margin: 10px;
-    font-size: 1.2rem;
-    transition: box-shadow 0.3s ease;
+.reactSkill {
+  grid-area: 2 / 1 / span 2 / span 3;
 }
 
-.skill:hover{
-    box-shadow: 0px 0px 20px #1e8ce180;
+.tsSkill {
+  grid-area: 4 / 4 / span 2 / span 2;
 }
 
-.dark-mode.skill{
-    color:#fff;
+.skillText {
+  display: none;
+  top: 100%;
 }
 
-.icon{
-    max-width: 30px;
-    margin-right: 10px;
+.sectionOfSkill:hover {
+  box-shadow: 0px 0px 20px #a5a4a4ab;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.sectionOfSkill:hover .skillText {
+  display: block;
+  font-size: 30px;
+}
+
+.sectionOfSkill:hover .iconOfSkill {
+  display: none;
+}
+
+.dark-mode.skill {
+  color: #fff;
+}
+
+.iconOfSkill {
+  max-width: 50%;
+  justify-self: center;
+  align-self: center;
 }
 
 /* Media */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
+  .Skills {
+    font-size: 1rem;
+  }
 
-    .Skills{
-        font-size: 1rem;
-    }
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 10px;
+    margin: 5% 10%;
+  }
 
-    .section {
-        text-align: center;
-        background: transparent;
-        margin: 2%;
-        height: auto;
-        width: 80%;
-    }
+  .reactSkill {
+    grid-area: 3 / 1 / span 2 / span 2;
+  }
 
-    .skill {
-        font-size: 0.8rem;
-        padding: 10px 16px;
-    }
-    
+  .tsSkill {
+    grid-area: 2/1;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    
-    .Skills {
-        flex-direction: column;
-        text-align: center;
-        margin: 5% 2%;
-        grid-template-columns: repeat(1, 1fr);
-        font-size: 1rem;
-    }
-  
-    .section {
-        text-align: center;
-        background: transparent;
-        margin: 2%;
-        height: auto;
-        width: 100%;
-    }
-    
-    .skill {
-        font-size: 0.8rem;
-        padding: 10px 16px;
-    }
+  .Skills {
+    flex-direction: column;
+    text-align: center;
+    margin: 5% 2%;
+    font-size: 1rem;
   }
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 10px;
+    margin: 5% 10%;
+  }
+
+  .reactSkill {
+    grid-area: 1/1;
+  }
+
+  .tsSkill {
+    grid-area: 2/2;
+  }
+}
+@media screen and (max-width: 426px) {
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 10px;
+    margin: 5% 10%;
+  }
+
+  .reactSkill {
+    grid-area: 1/1;
+  }
+
+  .tsSkill {
+    grid-area: auto/1;
+  }
+}

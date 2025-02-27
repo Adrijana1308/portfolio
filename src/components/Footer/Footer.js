@@ -31,13 +31,23 @@ function Footer() {
         />
         <img
           className="icons"
+          src="https://www.svgrepo.com/show/374146/typescript-official.svg"
+          alt="Ts icon"
+        />
+        <img
+          className="icons"
+          src="https://www.svgrepo.com/show/452088/php.svg"
+          alt="PHP icon"
+        />
+        <img
+          className="icons"
           src="https://www.svgrepo.com/show/353498/bootstrap.svg"
           alt="Bootstrap icon"
         />
         <img
           className="icons"
-          src="https://www.svgrepo.com/show/354048/material-ui.svg"
-          alt="Material UI icon"
+          src="https://www.svgrepo.com/show/452130/vue.svg"
+          alt="Vue icon"
         />
         <img
           className="icons"
@@ -76,8 +86,8 @@ function Footer() {
         />
         <img
           className="icons"
-          src="https://www.svgrepo.com/show/373874/netlify.svg"
-          alt="Netlify icon"
+          src="https://www.svgrepo.com/show/452156/angular.svg"
+          alt="Angular icon"
         />
         <img
           className="icons"
