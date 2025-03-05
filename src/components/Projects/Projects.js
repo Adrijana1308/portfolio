@@ -21,7 +21,7 @@ function Projects() {
       description:
         "The TODO application allows users to register and log in to manage their tasks. Users can add new tasks, mark them as completed, and delete tasks as needed. All task data is stored in a database.",
       url: "https://github.com/Adrijana1308/portfolio",
-      iconUrl: "https://www.svgrepo.com/show/314750/symfony.svg",
+      iconUrl: "https://www.svgrepo.com/show/374114/symfony.svg",
     },
     {
       image: zaposlenici,
