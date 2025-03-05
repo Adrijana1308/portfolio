@@ -19,7 +19,7 @@ function Projects() {
       image: todo,
       title: "TODO App",
       description:
-        "The application displays a list of company employees with powerful management features. Users can sort, filter, and search employees efficiently. Additionally, the app allows adding, editing, and deleting employees, with all changes being saved directly to the database for seamless data management.",
+        "The TODO application allows users to register and log in to manage their tasks. Users can add new tasks, mark them as completed, and delete tasks as needed. All task data is stored in a database.",
       url: "https://github.com/Adrijana1308/portfolio",
       iconUrl: "https://www.svgrepo.com/show/314750/symfony.svg",
     },
