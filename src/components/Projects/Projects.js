@@ -16,14 +16,6 @@ function Projects() {
 
   const projectsData = [
     {
-      image: todo,
-      title: "TODO App",
-      description:
-        "The TODO application allows users to register and log in to manage their tasks. Users can add new tasks, mark them as completed, and delete tasks as needed. All task data is stored in a database.",
-      url: "https://github.com/Adrijana1308/portfolio",
-      iconUrl: "https://www.svgrepo.com/show/354423/symfony.svg",
-    },
-    {
       image: zaposlenici,
       title: "Employees",
       description:
@@ -46,6 +38,14 @@ function Projects() {
         "A calendar with the capability to select days, months, and years, showcasing GitHub commit details through the API for the Calendar project. Last entry was November 2023 if you want to see commit details displayed.",
       url: "https://b2calendar.netlify.app",
       iconUrl: "https://www.svgrepo.com/show/439290/react.svg",
+    },
+    {
+      image: todo,
+      title: "TODO App",
+      description:
+        "The TODO application allows users to register and log in to manage their tasks. Users can add new tasks, mark them as completed, and delete tasks as needed. All task data is stored in a database.",
+      url: "https://github.com/Adrijana1308/TODO-App",
+      iconUrl: "https://www.svgrepo.com/show/354423/symfony.svg",
     },
     {
       image: project1,
