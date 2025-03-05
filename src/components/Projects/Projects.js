@@ -9,14 +9,23 @@ import project5 from "./images/project5.png";
 import project6 from "./images/project6.png";
 import locksify from "./images/locksify.png";
 import zaposlenici from "./images/zaposlenici.png";
+import todo from "./images/TODO-App.png";
 
 function Projects() {
   const { isOn } = useAppContext();
 
   const projectsData = [
     {
+      image: todo,
+      title: "TODO App",
+      description:
+        "The application displays a list of company employees with powerful management features. Users can sort, filter, and search employees efficiently. Additionally, the app allows adding, editing, and deleting employees, with all changes being saved directly to the database for seamless data management.",
+      url: "https://github.com/Adrijana1308/portfolio",
+      iconUrl: "https://www.svgrepo.com/show/508947/symfony.svg",
+    },
+    {
       image: zaposlenici,
-      title: "Zaposlenici",
+      title: "Employees",
       description:
         "The application displays a list of company employees with powerful management features. Users can sort, filter, and search employees efficiently. Additionally, the app allows adding, editing, and deleting employees, with all changes being saved directly to the database for seamless data management.",
       url: "https://zaposlenici.netlify.app",

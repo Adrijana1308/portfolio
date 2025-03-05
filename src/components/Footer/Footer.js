@@ -56,8 +56,8 @@ function Footer() {
         />
         <img
           className="icons"
-          src="https://www.svgrepo.com/show/452091/python.svg"
-          alt="Python icon"
+          src="https://www.svgrepo.com/show/508947/symfony.svg"
+          alt="Symfony icon"
         />
         <img
           className="icons"
