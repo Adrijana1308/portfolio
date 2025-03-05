@@ -61,8 +61,8 @@ function Footer() {
         />
         <img
           className="icons"
-          src="https://www.svgrepo.com/show/376358/c-plus-plus.svg"
-          alt="C++ icon"
+          src="https://www.svgrepo.com/show/374142/twig.svg"
+          alt="Twig icon"
         />
         <img
           className="icons"

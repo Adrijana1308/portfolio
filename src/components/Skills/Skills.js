@@ -96,10 +96,10 @@ function Skills() {
           <div className="sectionOfSkill">
             <img
               className="iconOfSkill"
-              src="https://www.svgrepo.com/show/376358/c-plus-plus.svg"
-              alt="C++ icon"
+              src="https://www.svgrepo.com/show/374142/twig.svg"
+              alt="Twig icon"
             />
-            <p className="skillText">C++</p>
+            <p className="skillText">Twig</p>
           </div>
           <div className="sectionOfSkill">
             <img
@@ -131,7 +131,7 @@ function Skills() {
               src="https://www.svgrepo.com/show/354423/symfony.svg"
               alt="Symfony icon"
             />
-            <p className="skillText">Python</p>
+            <p className="skillText">Symfony</p>
           </div>
           <div className="sectionOfSkill">
             <img
