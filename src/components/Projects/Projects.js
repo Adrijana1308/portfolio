@@ -21,7 +21,7 @@ function Projects() {
       description:
         "The application displays a list of company employees with powerful management features. Users can sort, filter, and search employees efficiently. Additionally, the app allows adding, editing, and deleting employees, with all changes being saved directly to the database for seamless data management.",
       url: "https://github.com/Adrijana1308/portfolio",
-      iconUrl: "https://www.svgrepo.com/show/508947/symfony.svg",
+      iconUrl: "https://www.svgrepo.com/show/314750/symfony.svg",
     },
     {
       image: zaposlenici,
