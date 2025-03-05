@@ -128,7 +128,7 @@ function Skills() {
           <div className="sectionOfSkill">
             <img
               className="iconOfSkill"
-              src="https://www.svgrepo.com/show/372958/symfony-badge.svg"
+              src="https://www.svgrepo.com/show/354423/symfony.svg"
               alt="Symfony icon"
             />
             <p className="skillText">Python</p>
