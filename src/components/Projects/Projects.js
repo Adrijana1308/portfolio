@@ -5,7 +5,6 @@ import project1 from "./images/project1.png";
 import project2 from "./images/project2.png";
 import project3 from "./images/project3.png";
 import project4 from "./images/project4.png";
-import project5 from "./images/project5.png";
 import project6 from "./images/project6.png";
 import locksify from "./images/locksify.png";
 import zaposlenici from "./images/zaposlenici.png";
@@ -77,13 +76,6 @@ function Projects() {
       description:
         "I have developed a basic Rock Paper Scissors game using HTML, CSS, and JavaScript.",
       url: "https://github.com/Adrijana1308/RockPaperScissors",
-      iconUrl: "https://www.svgrepo.com/show/349419/javascript.svg",
-    },
-    {
-      image: project5,
-      title: "Todo List",
-      description: "A todo list app that has create, edit and delete options.",
-      url: "https://github.com/Adrijana1308/todo-list",
       iconUrl: "https://www.svgrepo.com/show/349419/javascript.svg",
     },
   ];
